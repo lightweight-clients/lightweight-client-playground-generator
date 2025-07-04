@@ -12,6 +12,5 @@ echo "Changelog updated: $updateText"
 
 echo "Updating version in package.json"
 npm version "$version" --no-git-tag-version
-jq '.version = "'"$version"'"' package.json > temp.json && mv temp.json package.json
 
 echo "Done"
